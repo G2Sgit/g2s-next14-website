@@ -1,0 +1,26 @@
+.link {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  transition: all 0.8s ease;
+  background: #1c2024;
+  color: var(--lightTextColor);
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    color: var(--accentColor);
+  }
+}
+
+.wrapper {
+  display: flex;
+  gap: 1rem;
+}
