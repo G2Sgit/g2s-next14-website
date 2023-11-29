@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cloudinary-react": "^1.8.1",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
+    "react-intersection-observer": "^9.5.3",
     "sass": "^1.69.5"
   },
   "devDependencies": {

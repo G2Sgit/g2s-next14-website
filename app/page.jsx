@@ -2,6 +2,7 @@ import Section from "@/components/Section/Section";
 import Container from "@/components/Container/Container";
 import PageTitle from "@/components/PageTitle/PageTitle";
 import Paragraph from "@/components/Paragraph/Paragraph";
+import MainHero from "@/components/MainHero/MainHero";
 
 export const metadata = {
   title: "G2S",
@@ -11,6 +12,7 @@ export const metadata = {
 const HomePage = () => {
   return (
     <>
+      <MainHero />
       <Section>
         <Container>
           <PageTitle text="Home Page" />
