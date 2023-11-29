@@ -1,27 +1,136 @@
-.nav-list {
-    display: flex;
+.nav_container {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 450px;
+
+  padding: 46px 40px 50px 50px;
+
+  background-color: var(--primaryBackgroundColor);
+
+  @media screen and (min-width: 768px) {
+    position: static;
+
+    width: initial;
+  }
+}
+
+.nav_list {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+
     justify-content: center;
     align-items: center;
-    list-style: none;
+
+    gap: 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    gap: 35px;
+  }
 }
 
-.nav-item:not(:first-child) {
-    margin-left: 30px;
+.nav_item {
+  padding: 10px 0;
 
-}
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--navBorderColor);
+  }
 
-.nav-link {
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--accentColor);
-    text-decoration: none;
-    transition: transform var(--mainDuration) var(--mainTimingFunction);
+  @media screen and (min-width: 768px) {
+    padding: 38px 0;
 
-    &:hover {
-        transform: scaleX(2);
+    &:not(:last-child) {
+      border-bottom: none;
     }
+  }
 }
 
-.active-link {
+.nav_link {
+  line-height: calc(25 / 15);
+}
+
+.nav_link,
+.nav_drop_down_link {
+  font-size: 15px;
+  font-weight: 600;
+
+  color: var(--primaryNavColor);
+
+  transition: transform var(--mainDuration) var(--mainTimingFunction);
+
+  &:hover {
     color: var(--linkActiveColor);
+  }
+}
+
+.active_link {
+  color: var(--linkActiveColor);
+}
+
+.drop_down_btn {
+  padding: 0;
+
+  border: none;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primaryNavColor);
+
+  background-color: var(--primaryBackgroundColor);
+}
+
+.navigation_menu_content {
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+
+.menu_drop_down {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+
+    top: 38px;
+
+    min-width: 250px;
+
+    padding: 21px 0;
+
+    border-radius: 0 0 5px 5px;
+
+    background-color: var(--primaryBackgroundColor);
+  }
+}
+
+.nav_drop_down_link {
+  width: 100%;
+
+  padding: 8px 0 8px 20px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(25 / 14);
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--navBorderColor);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 18px 0 18px 20px;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
 }

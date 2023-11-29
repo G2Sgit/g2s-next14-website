@@ -4,42 +4,42 @@ import PageTitle from "../../components/PageTitle/PageTitle";
 import Paragraph from "@/components/Paragraph/Paragraph";
 
 export const metadata = {
-  title: "Portfolio",
-  description: "G2S portfolio page",
+  title: "FAQ",
+  description: "G2S FAQ page",
 };
 
-const PortfolioPage = () => {
+const FAQPage = () => {
   return (
     <main>
       <Section>
         <Container>
-          <PageTitle text="Portfolio Page" />
+          <PageTitle text="FAQ Page" />
           <Paragraph
-            content="PORTFOLIO Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+            content="FAQ Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
           />
           <Paragraph
-            content="PORTFOLIO Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+            content="FAQ Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
           />
           <Paragraph
-            content="PORTFOLIO Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+            content="FAQ Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
           />
           <Paragraph
-            content="PORTFOLIO Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+            content="FAQ Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
           />
           <Paragraph
-            content="PORTFOLIO Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+            content="FAQ Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
@@ -50,4 +50,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default FAQPage;
