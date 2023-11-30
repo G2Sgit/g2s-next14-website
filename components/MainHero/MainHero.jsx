@@ -18,7 +18,7 @@ const MainHero = () => {
       <video
         autoPlay={true}
         loop={true}
-        mute={true}
+        mute="true"
         ref={vidRef}
         className={css.video}
       >
