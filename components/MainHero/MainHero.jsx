@@ -1,40 +1,22 @@
 "use client";
-import Container from "../Container/Container";
-import Section from "../Section/Section";
-import css from "./MainHero.module.scss";
 
-import React, { useEffect, useRef } from "react";
+import css from "./MainHero.module.scss";
+import "next-cloudinary/dist/cld-video-player.css";
+import { CldVideoPlayer } from "next-cloudinary";
 
 const MainHero = () => {
-  const vidRef = useRef();
-
-  useEffect(() => {
-    vidRef.current.muted = false;
-  }, []);
-
   return (
     <div className={css.wrapper}>
       <div className={css.videoOverlay}></div>
-      <video
-        autoPlay={true}
+      <CldVideoPlayer
+        src="pbtwqyilcpgpm0syzapm"
+        autoPlay="always"
         loop={true}
-        mute="true"
-        ref={vidRef}
+        muted={true}
+        controls={false}
         className={css.video}
-      >
-        {/* <source
-          type="video/mp4"
-          src="https://londonweb.studio/wp-content/uploads/2022/03/video-2.mp4"
-        /> */}
-        <source
-          type="video/mp4"
-          src={
-            // "https://drive.google.com/uc?export=download&id=1f0ZgU02cFlNZVUk0eIRib_uXC-rX_WO1"
-            "https://drive.google.com/uc?export=download&id=1QQWrUmaAykEagc2o77rM22_7qW-FQnxw"
-          }
-        />
-        Your browser does not support the video tag.
-      </video>
+      />
+
       <div className={css.triangle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
