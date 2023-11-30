@@ -26,8 +26,13 @@ const MainHero = () => {
           type="video/mp4"
           src="https://londonweb.studio/wp-content/uploads/2022/03/video-2.mp4"
         /> */}
-        {/* <source type="video/mp4" src="./video1.mp4" /> */}
-        <source type="video/mp4" src="./video2.mp4" />
+        <source
+          type="video/mp4"
+          src={
+            // "https://drive.google.com/uc?export=download&id=1f0ZgU02cFlNZVUk0eIRib_uXC-rX_WO1"
+            "https://drive.google.com/uc?export=download&id=1QQWrUmaAykEagc2o77rM22_7qW-FQnxw"
+          }
+        />
         Your browser does not support the video tag.
       </video>
       <div className={css.triangle}>
