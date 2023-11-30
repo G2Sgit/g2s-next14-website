@@ -1,10 +1,11 @@
 .footer {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    font-size: 50px;
-    font-weight: 900;
-    letter-spacing: 0.7em;
-    text-align: center;
-    color: var(--accentColor);
-    background-color: var(--secondaryTextColor);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25.5px;
+  // letter-spacing: 0.7em;
+  // text-align: center;
+  // color: var(--accentColor);
+  color: var(--lightTextColor);
+
+  background-color: var(--secondaryTextColor);
 }

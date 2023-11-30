@@ -6,13 +6,11 @@
   --lightTextColor: #ffffff;
   --linkActiveColor: #0b70e1;
   --buttonColor: #0a2fa6;
-  --messengerButtonColor: #25d366;
   --primaryBackgroundColor: #ffffff;
   --secondaryBackgroundColor: #f5f7fc;
   --darkBackgroundColor: #000000;
   --primaryBorderRadius: 20px;
   --navBorderColor: rgba(0, 0, 0, 0.06);
-
   --mainDuration: 250ms;
   --mainTimingFunction: cubic-bezier(0.4, 0, 0.2, 1);
   --buttonShadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -22,6 +20,14 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --thirdShadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 p,
@@ -69,3 +75,12 @@ body {
 body.modal-open {
   overflow: hidden;
 }
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
