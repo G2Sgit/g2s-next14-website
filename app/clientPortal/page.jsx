@@ -4,42 +4,42 @@ import PageTitle from "../../components/PageTitle/PageTitle";
 import Paragraph from "@/components/Paragraph/Paragraph";
 
 export const metadata = {
-  title: "Portfolio",
-  description: "G2S portfolio page",
+  title: "Client Portal",
+  description: "G2S client portal page",
 };
 
-const PortfolioPage = () => {
+const ClientPortalPage = () => {
   return (
     <main>
       <Section>
         <Container>
-          <PageTitle text="Portfolio Page" />
+          <PageTitle text="Client Portal Page" />
           <Paragraph
-            content="PORTFOLIO Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+            content="CLIENTPORTAL Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
           />
           <Paragraph
-            content="PORTFOLIO Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+            content="CLIENTPORTAL Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
           />
           <Paragraph
-            content="PORTFOLIO Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+            content="CLIENTPORTAL Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
           />
           <Paragraph
-            content="PORTFOLIO Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+            content="CLIENTPORTAL Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
           />
           <Paragraph
-            content="PORTFOLIO Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+            content="CLIENTPORTAL Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
@@ -50,4 +50,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default ClientPortalPage;
