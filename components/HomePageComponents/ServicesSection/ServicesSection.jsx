@@ -6,6 +6,7 @@ const ServicesSection = () => {
   return (
     <ul className={css.wrapper}>
       <div className={css["card"]}>
+
         <div className={css["services-img"]}>
           <Image
             src="/img/homePage/services_bag.png"
@@ -30,7 +31,9 @@ const ServicesSection = () => {
             <use href=""></use>
           </svg> */}
         </button>
+
       </div>
+
       <li className={css["card"]}>
         <div className={css["services-img"]}>
           <Image
