@@ -7,6 +7,12 @@ import css from "./Navigation.module.scss";
 const Navigation = () => {
   const pathname = usePathname();
 
+  const isServicesActive =
+    pathname === "/websiteDesigning" ||
+    pathname === "/paying" ||
+    pathname === "/eCommerceSolutions" ||
+    pathname === "/websiteMaintenance";
+
   return (
     <NavigationMenu.Root className={css.nav_container}>
       <NavigationMenu.List className={css.nav_list}>
@@ -33,8 +39,16 @@ const Navigation = () => {
         </NavigationMenu.Item>
 
         <NavigationMenu.Item className={css.nav_item}>
-          <NavigationMenu.Trigger className={css.nav_link}>
-            Services
+
+          <NavigationMenu.Trigger className={`${css.drop_down_btn}`}>
+            <span
+              className={`${css.drop_down_btn_text}`}
+              style={{
+                color: isServicesActive && "var(--linkActiveColor)",
+              }}>
+              Services
+            </span>
+
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className={`${css.navigation_menu_content}`}>
             <ul className={css.menu_drop_down}>
