@@ -21,7 +21,8 @@ const Navigation = () => {
             className={`${css.nav_link} ${
               pathname === "/" ? css.active_link : null
             }`}
-            href="/">
+            href="/"
+          >
             Home
           </NavigationMenu.Link>
         </NavigationMenu.Item>
@@ -31,12 +32,14 @@ const Navigation = () => {
             className={`${css.nav_link} ${
               pathname === "/aboutUs" ? css.active_link : null
             }`}
-            href="/aboutUs">
+            href="/aboutUs"
+          >
             About Us
           </NavigationMenu.Link>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item className={css.nav_item}>
+
           <NavigationMenu.Trigger className={`${css.drop_down_btn}`}>
             <span
               className={`${css.drop_down_btn_text}`}
@@ -45,6 +48,7 @@ const Navigation = () => {
               }}>
               Services
             </span>
+
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className={`${css.navigation_menu_content}`}>
             <ul className={css.menu_drop_down}>
@@ -52,28 +56,32 @@ const Navigation = () => {
                 className={`${css.nav_drop_down_link} ${
                   pathname === "/websiteDesigning" ? css.active_link : null
                 }`}
-                href="/websiteDesigning">
+                href="/websiteDesigning"
+              >
                 Website Designing
               </NavigationMenu.Link>
               <NavigationMenu.Link
                 className={`${css.nav_drop_down_link} ${
                   pathname === "/paying" ? css.active_link : null
                 }`}
-                href="/paying">
+                href="/paying"
+              >
                 Pay Per Month Websites
               </NavigationMenu.Link>
               <NavigationMenu.Link
                 className={`${css.nav_drop_down_link} ${
                   pathname === "/eCommerceSolutions" ? css.active_link : null
                 }`}
-                href="/eCommerceSolutions">
+                href="/eCommerceSolutions"
+              >
                 E-Commerce Solutions
               </NavigationMenu.Link>
               <NavigationMenu.Link
                 className={`${css.nav_drop_down_link} ${
                   pathname === "/websiteMaintenance" ? css.active_link : null
                 }`}
-                href="/websiteMaintenance">
+                href="/websiteMaintenance"
+              >
                 Website Maintenance
               </NavigationMenu.Link>
             </ul>
@@ -85,7 +93,8 @@ const Navigation = () => {
             className={`${css.nav_link} ${
               pathname === "/portfolio" ? css.active_link : null
             }`}
-            href="/portfolio">
+            href="/portfolio"
+          >
             Portfolio
           </NavigationMenu.Link>
         </NavigationMenu.Item>
@@ -95,7 +104,8 @@ const Navigation = () => {
             className={`${css.nav_link} ${
               pathname === "/faq" ? css.active_link : null
             }`}
-            href="/faq">
+            href="/faq"
+          >
             FAQ
           </NavigationMenu.Link>
         </NavigationMenu.Item>
@@ -105,7 +115,8 @@ const Navigation = () => {
             className={`${css.nav_link} ${
               pathname === "/contact" ? css.active_link : null
             }`}
-            href="/contact">
+            href="/contact"
+          >
             Contact
           </NavigationMenu.Link>
         </NavigationMenu.Item>
@@ -115,7 +126,8 @@ const Navigation = () => {
             className={`${css.nav_link} ${
               pathname === "/clientPortal" ? css.active_link : null
             }`}
-            href="/clientPortal">
+            href="/clientPortal"
+          >
             Client Portal
           </NavigationMenu.Link>
         </NavigationMenu.Item>

@@ -8,17 +8,25 @@ import css from "./SocialLinks.module.scss";
 export default function SocialLinks() {
   return (
     <ul className={css.wrapper}>
-      <li href="https://www.linkedin.com" className={css.link}>
-        <FaLinkedinIn />
+      <li className={css.link}>
+        <a href="https://www.linkedin.com">
+          <FaLinkedinIn />
+        </a>
       </li>
-      <li href="https://www.facebook.com/learnbuildteach/" className={css.link}>
-        <FaFacebookF />
+      <li className={css.link}>
+        <a href="https://www.facebook.com/learnbuildteach/">
+          <FaFacebookF />
+        </a>
       </li>
-      <li href="http://www.instagram.com/larnbuildteach" className={css.link}>
-        <FaInstagram />
+      <li className={css.link}>
+        <a href="http://www.instagram.com/larnbuildteach">
+          <FaInstagram />
+        </a>
       </li>
-      <li href="https://www.youtube.com" className={css.link}>
-        <FaYoutube />
+      <li className={css.link}>
+        <a href="https://www.youtube.com">
+          <FaYoutube />
+        </a>
       </li>
     </ul>
   );

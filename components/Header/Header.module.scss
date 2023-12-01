@@ -1,5 +1,13 @@
 .header {
-  //   padding-top: 70px;
-  //   padding-bottom: 70px;
-  background-color: var(--primaryBackgroundColor);
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+.stikyHeader {
+  display: flex;
+  justify-content: space-between;
 }
