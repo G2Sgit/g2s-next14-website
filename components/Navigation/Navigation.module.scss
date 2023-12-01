@@ -10,10 +10,14 @@
 
   background-color: var(--primaryBackgroundColor);
 
+  z-index: 10;
+
   @media screen and (min-width: 768px) {
     position: static;
 
     width: initial;
+
+    padding: 0;
   }
 }
 
@@ -77,15 +81,62 @@
 
 .drop_down_btn {
   padding: 0;
+  position: relative;
+  padding-right: 15px;
 
   border: none;
 
+  background-color: var(--primaryBackgroundColor);
+
+  cursor: pointer;
+}
+
+.drop_down_btn_text {
   font-family: inherit;
   font-size: 15px;
   font-weight: 600;
+
   color: var(--primaryNavColor);
 
-  background-color: var(--primaryBackgroundColor);
+  &::after {
+    content: "\002B";
+
+    position: absolute;
+
+    right: 0px;
+    top: 50%;
+
+    transform: translateY(-53%);
+
+    font-size: 20px;
+    font-weight: 400;
+
+    &:active {
+      color: var(--linkActiveColor);
+    }
+  }
+
+  &:hover {
+    color: var(--linkActiveColor);
+
+    &::after {
+      content: "\2012";
+
+      position: absolute;
+
+      right: 0px;
+      top: 50%;
+
+      transform: translateY(-58%);
+
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  &:active {
+    color: var(--linkActiveColor);
+  }
 }
 
 .navigation_menu_content {
@@ -97,6 +148,8 @@
 .menu_drop_down {
   display: flex;
   flex-direction: column;
+
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
     position: absolute;
