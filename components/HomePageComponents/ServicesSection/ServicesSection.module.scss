@@ -2,13 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-//   box-sizing: border-box;
   border-radius: 10px;
   width: 125px;
   height: 42px;
   cursor: pointer;
+  font-size: 15px;
+  border: none;
+   outline: none;
 
-  box-sizing: border-box;
   background-color: var(--buttonColor);
   color: var(--lightTextColor);
 
@@ -38,8 +39,6 @@
 
     max-width: 712px;
 
-    // border-radius: 20px;
-    // background-color: var(--secondaryBackgroundColor);
   }
 
   .services-img {
@@ -89,7 +88,6 @@
   }
 
   .card-text-content {
-    // max-width: 258px;
     display: flex;
     flex-direction: column;
     gap: 20px;

@@ -4,7 +4,7 @@ import css from "./ServicesSection.module.scss";
 
 const ServicesSection = () => {
   return (
-    <div className={css.wrapper}>
+    <ul className={css.wrapper}>
       <div className={css["card"]}>
         <div className={css["services-img"]}>
           <Image
@@ -14,7 +14,6 @@ const ServicesSection = () => {
             alt="Bag picture"
           />
         </div>
-
         <div className={css["card-text-content"]}>
           {/* CardTitle */}
           <h2 className={css["card-title"]}>Web Design & Development</h2>
@@ -27,10 +26,12 @@ const ServicesSection = () => {
         </div>
         <button type="button" className={css["button"]}>
           View more
+          {/* <svg class="icon" width="" height="">
+            <use href=""></use>
+          </svg> */}
         </button>
       </div>
-
-      <div className={css["card"]}>
+      <li className={css["card"]}>
         <div className={css["services-img"]}>
           <Image
             src="/img/homePage/services_gold.png"
@@ -52,10 +53,12 @@ const ServicesSection = () => {
         </div>
         <button type="button" className={css["button"]}>
           View more
+           {/* <svg class="icon" width="" height="">
+            <use href=""></use>
+          </svg> */}
         </button>
-      </div>
-
-      <div className={css["card"]}>
+      </li>
+      <li className={css["card"]}>
         <div className={css["services-img"]}>
           <Image
             src="/img/homePage/services_message.png"
@@ -64,8 +67,7 @@ const ServicesSection = () => {
             alt="Messages picture"
           />
         </div>
-
-        <div className={css["card-text-content"]}>
+        <li className={css["card-text-content"]}>
           {/* CardTitle */}
           <h2 className={css["card-title"]}>Maintenance & Support</h2>
           <div className={css.description}>
@@ -74,12 +76,15 @@ const ServicesSection = () => {
               websites updated, secure, and functioning smoothly.
             </p>
           </div>
-        </div>
+        </li>
         <button type="button" className={css["button"]}>
           View more
+           {/* <svg class="icon" width="" height="">
+            <use href=""></use>
+          </svg> */}
         </button>
-      </div>
-    </div>
+      </li>
+    </ul>
   );
 };
 
