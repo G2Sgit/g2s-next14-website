@@ -5,7 +5,8 @@ import css from "./ServicesSection.module.scss";
 const ServicesSection = () => {
   return (
     <ul className={css.wrapper}>
-      <li className={css["card"]}>
+      <div className={css["card"]}>
+
         <div className={css["services-img"]}>
           <Image
             src="/img/homePage/services_bag.png"
@@ -30,7 +31,9 @@ const ServicesSection = () => {
             <use href=""></use>
           </svg> */}
         </button>
-      </li>
+
+      </div>
+
       <li className={css["card"]}>
         <div className={css["services-img"]}>
           <Image
