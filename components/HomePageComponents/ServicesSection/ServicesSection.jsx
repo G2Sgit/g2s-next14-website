@@ -5,7 +5,7 @@ import css from "./ServicesSection.module.scss";
 const ServicesSection = () => {
   return (
     <ul className={css.wrapper}>
-      <div className={css["card"]}>
+      <li className={css["card"]}>
 
         <div className={css["services-img"]}>
           <Image
@@ -32,7 +32,7 @@ const ServicesSection = () => {
           </svg> */}
         </button>
 
-      </div>
+      </li>
 
       <li className={css["card"]}>
         <div className={css["services-img"]}>
@@ -70,7 +70,7 @@ const ServicesSection = () => {
             alt="Messages picture"
           />
         </div>
-        <li className={css["card-text-content"]}>
+        <div className={css["card-text-content"]}>
           {/* CardTitle */}
           <h2 className={css["card-title"]}>Maintenance & Support</h2>
           <div className={css.description}>
@@ -79,7 +79,7 @@ const ServicesSection = () => {
               websites updated, secure, and functioning smoothly.
             </p>
           </div>
-        </li>
+        </div>
         <button type="button" className={css["button"]}>
           View more
            {/* <svg class="icon" width="" height="">
