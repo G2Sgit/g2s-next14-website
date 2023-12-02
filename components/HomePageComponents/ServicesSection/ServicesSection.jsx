@@ -21,7 +21,7 @@ const ServicesSection = () => {
           <div className={css.description}>
             <p>
               Our designers breathe life into your vision, creating visually
-              stunning layouts that capture your brand's essence.
+              stunning layouts that capture your brand&apos;s essence.
             </p>
           </div>
         </div>
