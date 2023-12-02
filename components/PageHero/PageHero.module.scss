@@ -1,0 +1,65 @@
+%hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--accentColor);
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 150px;
+    overflow: hidden;
+}
+
+.primary-hero {
+    @extend %hero;
+    background-image: url("../../public/img/hero-background-image1.webp");
+}
+
+.secondary-hero {
+    @extend %hero;
+    background-image: url("../../public/img/hero-background-image2.webp");
+}
+
+.title {
+    position: relative;
+    padding-top: 28px;
+    max-width: 720px;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+    color: var(--lightTextColor);
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        content: "";
+        width: 65px;
+        height: 5px;
+        background-color: var(--accentColor);
+    }
+}
+
+.watermark {
+    position: absolute;
+    top: -50px;
+    font-size: 175px;
+    font-weight: 900;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0.05;
+    color: var(--lightTextColor);
+
+}
+
+.text {
+    max-width: 720px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--lightTextColor);
+}

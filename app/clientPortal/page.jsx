@@ -1,6 +1,6 @@
 import Section from "@/components/Section/Section";
 import Container from "../../components/Container/Container";
-import PageTitle from "../../components/PageTitle/PageTitle";
+import PageHero from "@/components/PageHero/PageHero";
 import Paragraph from "@/components/Paragraph/Paragraph";
 
 export const metadata = {
@@ -11,9 +11,9 @@ export const metadata = {
 const ClientPortalPage = () => {
   return (
     <main>
+      <PageHero title="My account" primary={true} />
       <Section>
         <Container>
-          <PageTitle text="Client Portal Page" />
           <Paragraph
             content="CLIENTPORTAL Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique

@@ -1,6 +1,6 @@
 import Section from "@/components/Section/Section";
 import Container from "../../components/Container/Container";
-import PageTitle from "../../components/PageTitle/PageTitle";
+import PageHero from "@/components/PageHero/PageHero";
 import Paragraph from "@/components/Paragraph/Paragraph";
 
 export const metadata = {
@@ -11,9 +11,14 @@ export const metadata = {
 const PayPerMonthPage = () => {
   return (
     <main>
+      <PageHero
+        title="Pay Per Month"
+        description="Experience a new era of web design with London Web Studio—where affordability meets exceptional quality."
+        watermark="Pay Per Month"
+        primary={true}
+      />
       <Section>
         <Container>
-          <PageTitle text="Pay Per Month Page" />
           <Paragraph
             content="PAYPERMONTH Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
