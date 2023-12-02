@@ -1,6 +1,6 @@
 import Section from "@/components/Section/Section";
 import Container from "../../components/Container/Container";
-import PageTitle from "../../components/PageTitle/PageTitle";
+import PageHero from "@/components/PageHero/PageHero";
 import Paragraph from "@/components/Paragraph/Paragraph";
 
 export const metadata = {
@@ -11,9 +11,14 @@ export const metadata = {
 const FAQPage = () => {
   return (
     <main>
+      <PageHero
+        title="Frequently Asked Questions"
+        description="Here are some frequently asked questions (FAQs) for London Web Studio pay per month website designing services."
+        watermark="faq"
+        primary={true}
+      />
       <Section>
         <Container>
-          <PageTitle text="FAQ Page" />
           <Paragraph
             content="FAQ Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
