@@ -1,3 +1,13 @@
+.section {
+  padding: 72px 10px 61px;
+  background-image: url(https://londonweb.studio/wp-content/uploads/2022/03/inner01.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100px 0px 100px 0px;
+}
+
 .section-subtext {
   margin: 0px 0px 7px 0px;
 
@@ -15,7 +25,7 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 46px;
-  color: var(--secondaryTextColor);
+  color: var(--lightTextColor);
 }
 
 .color-orange {
@@ -32,7 +42,7 @@
   cursor: pointer;
   font-size: 16px;
   border: none;
-   outline: none;
+  outline: none;
 
   background-color: var(--accentColor);
   color: var(--lightTextColor);
@@ -63,6 +73,10 @@
 
     max-width: 712px;
   }
+
+  .section-text-content {
+    max-width: 520px;
+  }
 }
 
 /* Tablet */
@@ -70,7 +84,7 @@
   .wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     gap: 20px;
 
@@ -78,5 +92,10 @@
 
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .section-text-content {
+    max-width: 700px;
+    // margin: 0px 10px 0px 70px;
   }
 }

@@ -22,9 +22,7 @@ const HomePage = () => {
       <Section>
         <ServicesSection />
       </Section>
-      <Section>
         <GetStartedSection />
-      </Section>
       <Section>
         <Container>
           <PageTitle text="Home Page" />
