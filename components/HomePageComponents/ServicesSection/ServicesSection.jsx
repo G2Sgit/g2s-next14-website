@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AiOutlineRight } from "react-icons/ai";
 
 import css from "./ServicesSection.module.scss";
 
@@ -27,9 +28,7 @@ const ServicesSection = () => {
         </div>
         <button type="button" className={css["button"]}>
           View more
-          {/* <svg class="icon" width="" height="">
-            <use href=""></use>
-          </svg> */}
+          <AiOutlineRight />
         </button>
 
       </li>
@@ -56,9 +55,7 @@ const ServicesSection = () => {
         </div>
         <button type="button" className={css["button"]}>
           View more
-           {/* <svg class="icon" width="" height="">
-            <use href=""></use>
-          </svg> */}
+          <AiOutlineRight />
         </button>
       </li>
       <li className={css["card"]}>
@@ -82,9 +79,7 @@ const ServicesSection = () => {
         </div>
         <button type="button" className={css["button"]}>
           View more
-           {/* <svg class="icon" width="" height="">
-            <use href=""></use>
-          </svg> */}
+          <AiOutlineRight />
         </button>
       </li>
     </ul>
