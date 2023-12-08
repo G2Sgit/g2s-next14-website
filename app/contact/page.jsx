@@ -1,7 +1,9 @@
 import Section from "@/components/Section/Section";
 import Container from "../../components/Container/Container";
-import PageTitle from "../../components/PageTitle/PageTitle";
+import PageHero from "@/components/PageHero/PageHero";
+import ContactsDetails from "@/components/ContactPageComponents/ContactsDetails/ContactsDetails";
 import Paragraph from "@/components/Paragraph/Paragraph";
+import ContactsMap from "@/components/ContactPageComponents/ContactsMap/ContactsMap";
 
 export const metadata = {
   title: "Contact",
@@ -11,41 +13,16 @@ export const metadata = {
 const ContactPage = () => {
   return (
     <main>
-      <Section>
-        <Container>
-          <PageTitle text="Contact Page" />
-          <Paragraph
-            content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-        </Container>
-      </Section>
+      <PageHero
+        title="Contact Us"
+        description="Thank you for your interest in London Web Studio. We value your
+              feedback, inquiries, and suggestions. Please feel free to reach out
+              to us using the following contact information:"
+        watermark="Contact"
+        primary={true}
+      />
+      <ContactsDetails sectionTitle="Contact Links & Contact Form" hidden={true}/>
+      <ContactsMap />
     </main>
   );
 };

@@ -5,6 +5,9 @@ import Paragraph from "@/components/Paragraph/Paragraph";
 import MainHero from "@/components/HomePageComponents/MainHero/MainHero";
 import AboutUsSection from "@/components/HomePageComponents/AboutUsSection/AboutUsSection";
 import RecentlyProjectsSection from "../components/HomePageComponents/RecentlyProjectsSection/RecentlyProjectsSection";
+import ServicesSection from "@/components/HomePageComponents/ServicesSection/ServicesSection";
+import GetStartedSection from "@/components/HomePageComponents/GetStartedSection/GetStartedSection";
+
 
 export const metadata = {
   title: "G2S",
@@ -18,6 +21,10 @@ const HomePage = () => {
       <Section>
         <AboutUsSection />
       </Section>
+      <Section>
+        <ServicesSection />
+      </Section>
+        <GetStartedSection />
       <Section>
         <Container>
           <RecentlyProjectsSection />
