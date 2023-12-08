@@ -10,14 +10,14 @@ import Footer from "@/components/Footer/Footer";
 const sora = Sora({
   subsets: ["latin"],
   variable: "--sora",
-  weight: ["400", "500", "600", "700", "800"]
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 // to use Google Font "Roboto" type in CSS-rule:   font-family: var(--roboto)
-const roboto = Roboto({ 
+const roboto = Roboto({
   subsets: ["latin"],
   variable: "--roboto",
-  weight: ["400", "500", "700", "900"]
+  weight: ["400", "500", "700", "900"],
 });
 
 //=======================================================================================================

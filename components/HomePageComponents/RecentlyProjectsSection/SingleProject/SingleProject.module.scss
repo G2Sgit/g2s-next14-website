@@ -1,0 +1,101 @@
+.project_card_thumb {
+  position: relative;
+}
+
+.image_thumb {
+  width: 300px;
+  height: 213px;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.project_card_overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--accentColor);
+  opacity: 0;
+
+  transition: opacity 0.4s var(--mainTimingFunction);
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.project_description_link {
+  position: absolute;
+  left: 25px;
+  bottom: 10px;
+
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--lightTextColor);
+
+  opacity: 0;
+
+  transition: bottom 0.8s var(--mainTimingFunction),
+    opacity 0.8s var(--mainTimingFunction), color 0.4s var(--mainTimingFunction);
+
+  &:hover {
+    color: var(--buttonColor);
+  }
+}
+
+.project_card_overlay:hover .project_description_link {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.project_description_button {
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: 400;
+  // color: var(--lightTextColor);
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 var(--lightTextColor);
+
+  opacity: 0;
+
+  background-color: var(--buttonColor);
+
+  cursor: pointer;
+
+  transition: right 0.8s var(--mainTimingFunction),
+    opacity 0.8s var(--mainTimingFunction), scale 0.4s var(--mainTimingFunction);
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.project_card_overlay:hover .project_description_button {
+  right: 25px;
+  opacity: 1;
+}
+
+.project_description_button_icon {
+  font-size: 20px;
+  width: 14px;
+}
