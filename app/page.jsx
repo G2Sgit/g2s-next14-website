@@ -4,8 +4,10 @@ import PageTitle from "@/components/PageTitle/PageTitle";
 import Paragraph from "@/components/Paragraph/Paragraph";
 import MainHero from "@/components/HomePageComponents/MainHero/MainHero";
 import AboutUsSection from "@/components/HomePageComponents/AboutUsSection/AboutUsSection";
+import RecentlyProjectsSection from "../components/HomePageComponents/RecentlyProjectsSection/RecentlyProjectsSection";
 import ServicesSection from "@/components/HomePageComponents/ServicesSection/ServicesSection";
 import GetStartedSection from "@/components/HomePageComponents/GetStartedSection/GetStartedSection";
+
 
 export const metadata = {
   title: "G2S",
@@ -25,37 +27,7 @@ const HomePage = () => {
         <GetStartedSection />
       <Section>
         <Container>
-          <PageTitle text="Home Page" />
-          <Paragraph
-            content="HOME PAGE Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="HOME PAGE Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="HOME PAGE Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="HOME PAGE Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="HOME PAGE Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
+          <RecentlyProjectsSection />
         </Container>
       </Section>
     </>
