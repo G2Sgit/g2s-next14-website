@@ -1,7 +1,9 @@
 import Section from "@/components/Section/Section";
 import Container from "../../components/Container/Container";
 import PageHero from "@/components/PageHero/PageHero";
+import ContactsDetails from "@/components/ContactPageComponents/ContactsDetails/ContactsDetails";
 import Paragraph from "@/components/Paragraph/Paragraph";
+import ContactsMap from "@/components/ContactPageComponents/ContactsMap/ContactsMap";
 
 export const metadata = {
   title: "Contact",
@@ -19,40 +21,8 @@ const ContactPage = () => {
         watermark="Contact"
         primary={true}
       />
-      <Section>
-        <Container>
-          <Paragraph
-            content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-        </Container>
-      </Section>
+      <ContactsDetails sectionTitle="Contact Links & Contact Form" hidden={true}/>
+      <ContactsMap />
     </main>
   );
 };
