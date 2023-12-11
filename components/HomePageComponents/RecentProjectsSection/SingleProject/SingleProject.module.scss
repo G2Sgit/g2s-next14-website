@@ -26,7 +26,7 @@
   background-color: var(--accentColor);
   opacity: 0;
 
-  transition: opacity 0.4s var(--mainTimingFunction);
+  transition: opacity 400ms var(--mainTimingFunction);
 
   &:hover {
     opacity: 0.9;
@@ -44,8 +44,11 @@
 
   opacity: 0;
 
-  transition: bottom 0.8s var(--mainTimingFunction),
-    opacity 0.8s var(--mainTimingFunction), color 0.4s var(--mainTimingFunction);
+  transition: bottom 800ms var(--mainTimingFunction),
+    opacity 800ms var(--mainTimingFunction),
+    color 400ms var(--mainTimingFunction);
+
+  cursor: pointer;
 
   &:hover {
     color: var(--buttonColor);
@@ -82,8 +85,9 @@
 
   cursor: pointer;
 
-  transition: right 0.8s var(--mainTimingFunction),
-    opacity 0.8s var(--mainTimingFunction), scale 0.4s var(--mainTimingFunction);
+  transition: right 800ms var(--mainTimingFunction),
+    opacity 800ms var(--mainTimingFunction),
+    scale 400ms var(--mainTimingFunction);
 
   &:hover {
     scale: 1.1;
