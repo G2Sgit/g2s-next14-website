@@ -1,0 +1,164 @@
+.overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--backdropColor);
+  z-index: 1000;
+}
+
+.modal_thumb {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 8px;
+
+  overflow-y: scroll;
+
+  z-index: 1200;
+}
+
+.modal {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+
+  padding: 40px;
+  margin: 60px auto;
+
+  border-radius: 4px;
+
+  background-color: var(--primaryBackgroundColor);
+
+  @media screen and (min-width: 1200px) {
+    max-width: 950px;
+  }
+}
+
+.close_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: var(--projectModalCloseButton);
+
+  cursor: pointer;
+
+  transition: scale 400ms var(--mainTimingFunction);
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.project_name_title {
+  font-size: 36px;
+  line-height: calc(46 / 36);
+  color: var(--secondaryTextColor);
+  font-weight: 700;
+
+  margin-bottom: 35px;
+}
+
+.project_name_main_title {
+  font-size: 52px;
+  line-height: calc(60 / 52);
+  color: var(--secondaryTextColor);
+  font-weight: 700;
+
+  margin-bottom: 35px;
+}
+
+.order_history_text {
+  font-size: 15px;
+  line-height: calc(26 / 15);
+  color: var(--primaryTextColor);
+
+  margin-bottom: 26px;
+}
+
+.info_list_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info_title {
+  font-size: 28px;
+  line-height: calc(38 / 28);
+  color: var(--secondaryTextColor);
+  font-weight: 600;
+
+  margin-bottom: 26px;
+}
+
+.info_text,
+.short_info,
+.advantage_item,
+.call_to_action_text,
+.get_started_link {
+  font-size: 15px;
+  line-height: calc(26 / 15);
+  color: var(--primaryTextColor);
+
+  margin-bottom: 26px;
+}
+
+.advantages_list {
+  margin-bottom: 80px;
+}
+
+.advantage_item {
+  margin-bottom: 0;
+  margin-left: 40px;
+
+  list-style: initial;
+}
+
+.any_questions_title {
+  margin-bottom: 26px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(46 / 36);
+  color: var(--secondaryTextColor);
+}
+
+.phone_number,
+.call_to_action_title {
+  margin-bottom: 26px;
+
+  font-size: 38px;
+  font-weight: 700;
+  line-height: calc(48 / 38);
+  color: var(--secondaryTextColor);
+}
+
+.project_img {
+  margin-bottom: 40px;
+}
+
+.get_started_link {
+  color: var(--accentColor);
+  padding-bottom: 1px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+
+  transition: border-bottom var(--mainDuration) var(--mainTimingFunction);
+
+  &:hover {
+    border-bottom: 1px solid var(--accentColor);
+  }
+}
