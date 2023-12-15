@@ -3,6 +3,7 @@ import Container from "@/components/Container/Container";
 import ContactsHeading from "../ContactsHeading/ContactsHeading";
 import ContactsParagraph from "../ContactsParagraph/ContactsParagraph";
 import ContactsList from "../ContactsList/ContactsList";
+import ContactsForm from "../ContactsForm/ContactsForm";
 
 const ContactsDetails = ({ sectionTitle, hidden }) => {
   return (
@@ -24,6 +25,7 @@ const ContactsDetails = ({ sectionTitle, hidden }) => {
           </div>
           <div className={css["right-column"]}>
             <ContactsHeading text="Contact Us" light={true} />
+            <ContactsForm />
           </div>
         </div>
       </Container>

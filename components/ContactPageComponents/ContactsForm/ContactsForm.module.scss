@@ -1,0 +1,44 @@
+.form {
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 29px;
+    padding-bottom: 38px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.input {
+    width: 170px;
+    padding: 17px 24px;
+    margin-bottom: 42px;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--secondaryBackgroundColor);
+
+    &:nth-child(2n) {
+        margin-left: 30px;
+    }
+}
+
+.text-area {
+    width: 370px;
+    height: 150px;
+    margin-bottom: 60px;
+    padding: 15px 24px;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--secondaryBackgroundColor);
+}
+
+.button {
+    padding: 17px 28px;
+    font-family: var(--roboto);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 11px;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--buttonColor);
+    color: var(--lightTextColor);
+}
