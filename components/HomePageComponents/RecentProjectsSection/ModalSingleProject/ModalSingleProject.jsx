@@ -18,11 +18,11 @@ const ModalSingleProject = ({ chosenSingleProject, closeModal }) => {
     advantagesList,
   } = chosenSingleProject;
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = useCallback((e) => {
     if (e.code === "Escape") {
       closeModal();
     }
-  };
+  }, [])
 
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
@@ -73,7 +73,7 @@ const ModalSingleProject = ({ chosenSingleProject, closeModal }) => {
           <p className={css.short_info}>{shortDescription}</p>
           <ul className={css.advantages_list}>
             {advantagesList.map((advantage) => (
-              <li className={css.advantage_item}>{advantage}</li>
+              <li key={advantage} className={css.advantage_item}>{advantage}</li>
             ))}
           </ul>
           <h3 className={css.any_questions_title}>
