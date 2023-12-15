@@ -22,7 +22,7 @@ const ModalSingleProject = ({ chosenSingleProject, closeModal }) => {
     if (e.code === "Escape") {
       closeModal();
     }
-  }, [])
+  }, [closeModal])
 
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
