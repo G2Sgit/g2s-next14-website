@@ -1,0 +1,17 @@
+.featuresItem {
+  text-align: left;
+  padding: 54px 50px 60px 40px;
+  border-radius: 3px 3px 100px 3px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+  background-color: var(--primaryBackgroundColor);
+  height: 100%;
+  & h2 {
+    font-size: 18px;
+    margin-bottom: 19px;
+    color: var(--primaryNavColor);
+  }
+  & p {
+    font-size: 15px;
+    color: var(--primaryTextColor);
+  }
+}

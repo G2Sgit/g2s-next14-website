@@ -1,0 +1,15 @@
+.headingSection {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    gap: 15px;
+  }
+}
+.textSection {
+  @media screen and (max-width: 767px) {
+    margin-top: 50px;
+  }
+}
+.image {
+  max-width: 100%;
+  object-fit: contain;
+}
