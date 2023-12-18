@@ -1,7 +1,11 @@
 import Section from "@/components/Section/Section";
-import Container from "../../components/Container/Container";
 import PageHero from "@/components/PageHero/PageHero";
-import Paragraph from "@/components/Paragraph/Paragraph";
+
+
+
+import GetStartedSection from "@/components/HomePageComponents/GetStartedSection/GetStartedSection";
+import AboutUsWithNumbers from "@/components/AboutUsPageComponents/AboutUsWithNumbers/AboutUsWithNumbers";
+import WhyChoseUs from "@/components/AboutUsPageComponents/WhyChoseUs/WhyChoseUs";
 
 export const metadata = {
   title: "About",
@@ -11,45 +15,19 @@ export const metadata = {
 const AboutPage = () => {
   return (
     <main>
-      <PageHero
+       <PageHero
         title="About Us"
-        description="London Web Studio has been at the forefront of the digital evolution. With a passion for pixel-perfect designs and a commitment to the latest web technologies, we've been shaping the web landscape since our inception."
-        watermark="about"
+        description="London Web Studio has been at the forefront of the digital evolution. With a passion for pixel-perfect designs and a commitment to the latest web technologies, we&apos;ve been shaping the web landscape since our inception."
+        watermark="ABOUT"
+        primary={false}
       />
       <Section>
-        <Container>
-          <Paragraph
-            content="ABOUT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="ABOUT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="ABOUT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="ABOUT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="ABOUT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-        </Container>
+      <AboutUsWithNumbers />
       </Section>
+      <Section>
+      <WhyChoseUs/>
+      </Section>
+      <GetStartedSection />
     </main>
   );
 };
