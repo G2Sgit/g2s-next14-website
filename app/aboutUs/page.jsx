@@ -3,7 +3,7 @@ import PageHero from "@/components/PageHero/PageHero";
 
 
 
-import GetStartedSection from "@/components/HomePageComponents/GetStartedSection/GetStartedSection";
+import GetStartedSection from "@/components/GetStartedSection/GetStartedSection";
 import AboutUsWithNumbers from "@/components/AboutUsPageComponents/AboutUsWithNumbers/AboutUsWithNumbers";
 import WhyChoseUs from "@/components/AboutUsPageComponents/WhyChoseUs/WhyChoseUs";
 
