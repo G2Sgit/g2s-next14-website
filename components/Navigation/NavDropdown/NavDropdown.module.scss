@@ -5,21 +5,12 @@
     left: -15px;
 
     transform: translateY(100%);
+    overflow: hidden;
+    transition: height 400ms;
   }
 }
 
 .menu_dropdown {
-  //==============
-  // position: absolute;
-
-  // max-height: 0px;
-  // overflow: hidden;
-  // // -webkit-transition:max-height 0.4s linear;
-  // // -moz-transition:max-height 0.4s linear;
-  // transition: max-height 1.4s linear;
-
-  //================
-
   display: flex;
   flex-direction: column;
 
@@ -35,12 +26,6 @@
     border-radius: 0 0 5px 5px;
   }
 }
-
-//================
-// .nav_dropdown_item:hover .menu_dropdown {
-//   max-height: 300px;
-// }
-//===================
 
 .dropdown_item {
   width: 100%;

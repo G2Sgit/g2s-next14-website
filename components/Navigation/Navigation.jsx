@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 import NavDropdown from "./NavDropdown/NavDropdown";
 
@@ -11,7 +12,14 @@ import css from "./Navigation.module.scss";
 
 const Navigation = () => {
   const pathname = usePathname();
+  const dropRef = useRef(null);
   const [isDropdownShown, setIsDropdownShown] = useState(false);
+
+  // useEffect(() => {
+  //   console.log(dropRef);
+  //   console.log(dropRef.current);
+  //   console.log(dropRef.current?.scrollHeight);
+  // });
 
   const isMainPage = pathname === "/";
 
@@ -74,8 +82,7 @@ const Navigation = () => {
               Services
             </span>
             {isDropdownShown ? (
-              <FontAwesomeIcon
-                icon={faMinus}
+              <FaMinus
                 // colors of minus icon on the main page and all other pages
                 style={{
                   width: "10px",
@@ -85,8 +92,7 @@ const Navigation = () => {
                 }}
               />
             ) : (
-              <FontAwesomeIcon
-                icon={faPlus}
+              <FaPlus
                 className={css.plus}
                 // colors of plus icon on the main page and all other pages
                 style={{
@@ -96,7 +102,8 @@ const Navigation = () => {
               />
             )}
           </div>
-          {isDropdownShown && <NavDropdown />}
+
+          <NavDropdown isDropdownShown={isDropdownShown} />
         </li>
 
         <li className={css.nav_item}>
