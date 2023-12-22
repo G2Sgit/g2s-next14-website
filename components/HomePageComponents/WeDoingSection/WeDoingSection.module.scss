@@ -1,0 +1,138 @@
+.section-subtext {
+    margin: 0px 0px 7px 0px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: var(--accentColor);
+}
+
+.section-title {
+    margin: 0px 0px 20px 0px;
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    color: var(--secondaryTextColor);
+}
+
+.color-orange {
+    text-decoration: underline;
+    color: var(--accentColor);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+
+    padding: 8px 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    border: none;
+    outline: none;
+
+    background-color: var(--buttonColor);
+    color: var(--lightTextColor);
+
+    &:focus {
+        background-color: var(--accentColor);
+        color: var(--lightTextColor);
+    }
+
+    &:hover {
+        background-color: var(--accentColor);
+        color: var(--lightTextColor);
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        max-width: 712px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-img {
+        width: 100vw;
+
+        border-radius: 50px;
+        object-fit: cover;
+    }
+
+    .section-text-content {
+        max-width: 520px;
+
+        margin: 40px 10px 0px 10px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .background {
+        background-color: var(--secondaryBackgroundColor);
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+
+        max-width: 1200px;
+
+        padding: 125px 40px 125px 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-img {
+        width: 100vw;
+
+        border-radius: 150px;
+        object-fit: cover;
+    }
+
+    .section-text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        max-width: 524px;
+
+        margin: 0px 40px 0px 70px;
+
+        font-size: 16px;
+    }
+
+    .paragrahp-wrapper {
+        display: flex;
+        padding: 30px 20px 36px 80px;
+        margin-top: 40px;
+        margin-bottom: 28px;
+
+        border-radius: 40px;
+
+        background-color: var(--lightTextColor);
+    }
+
+    .icon-wrapper {
+        width: 40px;
+        height: 40px;
+        margin-left: -70px;
+        margin-right: 20px;
+    }
+}

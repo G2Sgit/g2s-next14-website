@@ -6,6 +6,7 @@ import MainHero from "@/components/HomePageComponents/MainHero/MainHero";
 import AboutUsSection from "@/components/HomePageComponents/AboutUsSection/AboutUsSection";
 import RecentProjectsSection from "../components/HomePageComponents/RecentProjectsSection/RecentProjectsSection";
 import ServicesSection from "@/components/HomePageComponents/ServicesSection/ServicesSection";
+import WeDoingSection from "@/components/HomePageComponents/WeDoingSection";
 import GetStartedSection from "@/components/HomePageComponents/GetStartedSection/GetStartedSection";
 // import Loader from "@/components/Loader/Loader";
 
@@ -26,6 +27,9 @@ const HomePage = () => {
       </Section>
       <Section>
         <ServicesSection />
+      </Section>
+      <Section>
+        <WeDoingSection />
       </Section>
       <RecentProjectsSection />
 

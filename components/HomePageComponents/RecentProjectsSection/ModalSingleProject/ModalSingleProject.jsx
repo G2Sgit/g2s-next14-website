@@ -77,9 +77,13 @@ const ModalSingleProject = ({ chosenSingleProject, closeModal }) => {
           <p className={css.short_info}>{shortDescription}</p>
           <ul className={css.advantages_list}>
             {advantagesList.map((advantage) => (
+
+             
               <li key={advantage} className={css.advantage_item}>
                 {advantage}
               </li>
+
+
             ))}
           </ul>
           <h3 className={css.any_questions_title}>
