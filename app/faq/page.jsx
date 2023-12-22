@@ -1,7 +1,9 @@
 import Section from "@/components/Section/Section";
 import Container from "../../components/Container/Container";
 import PageHero from "@/components/PageHero/PageHero";
-import Paragraph from "@/components/Paragraph/Paragraph";
+// import Paragraph from "@/components/Paragraph/Paragraph";
+import { faqList } from "../../data/questionsAndAnswers";
+import Accordion from "@/components/FaqPageComponents/Accordion/Accordion";
 
 export const metadata = {
   title: "FAQ",
@@ -19,36 +21,7 @@ const FAQPage = () => {
       />
       <Section>
         <Container>
-          <Paragraph
-            content="FAQ Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="FAQ Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="FAQ Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="FAQ Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
-          <Paragraph
-            content="FAQ Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
-            amet expedita delectus mollitia ipsum, suscipit laboriosam similique
-            voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
-            aliquid voluptatibus sequi voluptates expedita."
-          />
+          <Accordion faqList={faqList} />
         </Container>
       </Section>
     </main>

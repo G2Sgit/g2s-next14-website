@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -18,11 +19,14 @@ const ModalSingleProject = ({ chosenSingleProject, closeModal }) => {
     advantagesList,
   } = chosenSingleProject;
 
-  const handleKeyDown = useCallback((e) => {
-    if (e.code === "Escape") {
-      closeModal();
-    }
-  }, [closeModal])
+  const handleKeyDown = useCallback(
+    (e) => {
+      if (e.code === "Escape") {
+        closeModal();
+      }
+    },
+    [closeModal]
+  );
 
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
@@ -73,7 +77,13 @@ const ModalSingleProject = ({ chosenSingleProject, closeModal }) => {
           <p className={css.short_info}>{shortDescription}</p>
           <ul className={css.advantages_list}>
             {advantagesList.map((advantage) => (
-              <li key={advantage} className={css.advantage_item}>{advantage}</li>
+
+             
+              <li key={advantage} className={css.advantage_item}>
+                {advantage}
+              </li>
+
+
             ))}
           </ul>
           <h3 className={css.any_questions_title}>
@@ -81,10 +91,12 @@ const ModalSingleProject = ({ chosenSingleProject, closeModal }) => {
           </h3>
           <h2 className={css.phone_number}>+44 7449 187945</h2>
 
-          <img
+          <Image
             className={css.project_img}
             src={projectImgSrc}
             alt={projectImgAlt}
+            width={1103}
+            height={620}
           />
 
           <p className={css.call_to_action_text}>
