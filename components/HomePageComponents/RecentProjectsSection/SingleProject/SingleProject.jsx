@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { BiPlusMedical } from "react-icons/bi";
 import css from "./SingleProject.module.scss";
 
 const SingleProject = ({ projectToRender, openModal }) => {
@@ -15,12 +17,17 @@ const SingleProject = ({ projectToRender, openModal }) => {
         <div
           onClick={() => openModal({ projectToRender })}
           className={css.project_description_button}>
-          &#10133;
+          <BiPlusMedical />
         </div>
       </div>
 
       <div className={css.image_thumb}>
-        <img src={projectImgSrc} alt={projectImgAlt} />
+        <Image
+          src={projectImgSrc}
+          alt={projectImgAlt}
+          width={300}
+          height={213}
+        />
       </div>
     </li>
   );

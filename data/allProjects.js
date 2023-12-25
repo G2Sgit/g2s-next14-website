@@ -7,7 +7,7 @@ export const projects = [
     orderHistory:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores fugit dolore ullam beatae rem porro harum dolorum magni velit quibusdam eos qui, nam adipisci culpa exercitationem, aperiam dignissimos quod",
     projectImgSrc:
-      "img/homePage/temporaryFolderRecentProjects/boxing-g14fc751f1_1280.jpg",
+      "/img/homePage/temporaryFolderRecentProjects/boxing-g14fc751f1_1280.jpg",
     projectImgAlt: "boxing",
     category: "some category for project 1",
     client: "client's name 1",
@@ -29,7 +29,7 @@ export const projects = [
     orderHistory:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores fugit dolore ullam beatae rem porro harum dolorum magni velit quibusdam eos qui, nam adipisci culpa exercitationem, aperiam dignissimos quod",
     projectImgSrc:
-      "img/homePage/temporaryFolderRecentProjects/cat-gde558e530_1280.jpg",
+      "/img/homePage/temporaryFolderRecentProjects/cat-gde558e530_1280.jpg",
     projectImgAlt: "thinking cat",
     category: "some category for project 2",
     client: "client's name 2",
@@ -51,7 +51,7 @@ export const projects = [
     orderHistory:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores fugit dolore ullam beatae rem porro harum dolorum magni velit quibusdam eos qui, nam adipisci culpa exercitationem, aperiam dignissimos quod",
     projectImgSrc:
-      "img/homePage/temporaryFolderRecentProjects/smilies-gd41724319_1280.jpg",
+      "/img/homePage/temporaryFolderRecentProjects/smilies-gd41724319_1280.jpg",
     projectImgAlt: "happy smiles",
     category: "some category for project 3",
     client: "client's name 3",
@@ -73,7 +73,7 @@ export const projects = [
     orderHistory:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores fugit dolore ullam beatae rem porro harum dolorum magni velit quibusdam eos qui, nam adipisci culpa exercitationem, aperiam dignissimos quod",
     projectImgSrc:
-      "img/homePage/temporaryFolderRecentProjects/frog-g8a0890dfa_1280.jpg",
+      "/img/homePage/temporaryFolderRecentProjects/frog-g8a0890dfa_1280.jpg",
     projectImgAlt: "frogs",
     category: "some category for project 4",
     client: "client's name 4",
@@ -95,7 +95,7 @@ export const projects = [
     orderHistory:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores fugit dolore ullam beatae rem porro harum dolorum magni velit quibusdam eos qui, nam adipisci culpa exercitationem, aperiam dignissimos quod",
     projectImgSrc:
-      "img/homePage/temporaryFolderRecentProjects/model-ge4b8e83fa_1280.jpg",
+      "/img/homePage/temporaryFolderRecentProjects/model-ge4b8e83fa_1280.jpg",
     projectImgAlt: "strange girl",
     category: "some category for project 5",
     client: "client's name 5",
@@ -117,7 +117,7 @@ export const projects = [
     orderHistory:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores fugit dolore ullam beatae rem porro harum dolorum magni velit quibusdam eos qui, nam adipisci culpa exercitationem, aperiam dignissimos quod",
     projectImgSrc:
-      "img/homePage/temporaryFolderRecentProjects/sleep-g967136596_1280.jpg",
+      "/img/homePage/temporaryFolderRecentProjects/sleep-g967136596_1280.jpg",
     projectImgAlt: "kids",
     category: "some category for project 6",
     client: "client's name 6",
@@ -139,7 +139,7 @@ export const projects = [
     orderHistory:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores fugit dolore ullam beatae rem porro harum dolorum magni velit quibusdam eos qui, nam adipisci culpa exercitationem, aperiam dignissimos quod",
     projectImgSrc:
-      "img/homePage/temporaryFolderRecentProjects/smiley-g7406ce255_1280.jpg",
+      "/img/homePage/temporaryFolderRecentProjects/smiley-g7406ce255_1280.jpg",
     projectImgAlt: "emotions",
     category: "some category for project 7",
     client: "client's name 7",
@@ -161,7 +161,7 @@ export const projects = [
     orderHistory:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores fugit dolore ullam beatae rem porro harum dolorum magni velit quibusdam eos qui, nam adipisci culpa exercitationem, aperiam dignissimos quod",
     projectImgSrc:
-      "img/homePage/temporaryFolderRecentProjects/cat-gf89e217ba_1280.jpg",
+      "/img/homePage/temporaryFolderRecentProjects/cat-gf89e217ba_1280.jpg",
     projectImgAlt: "kitty under covering",
     category: "some category for project 8",
     client: "client's name 8",
@@ -183,7 +183,7 @@ export const projects = [
     orderHistory:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores fugit dolore ullam beatae rem porro harum dolorum magni velit quibusdam eos qui, nam adipisci culpa exercitationem, aperiam dignissimos quod",
     projectImgSrc:
-      "img/homePage/temporaryFolderRecentProjects/spassfototo-g1d51dd5af_1280.jpg",
+      "/img/homePage/temporaryFolderRecentProjects/spassfototo-g1d51dd5af_1280.jpg",
     projectImgAlt: "flying dogs",
     category: "some category for project 9",
     client: "client's name 9",
@@ -205,7 +205,7 @@ export const projects = [
     orderHistory:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores fugit dolore ullam beatae rem porro harum dolorum magni velit quibusdam eos qui, nam adipisci culpa exercitationem, aperiam dignissimos quod",
     projectImgSrc:
-      "img/homePage/temporaryFolderRecentProjects/spring-cleaning-g42d97e2aa_1280.jpg",
+      "/img/homePage/temporaryFolderRecentProjects/spring-cleaning-g42d97e2aa_1280.jpg",
     projectImgAlt: "Photo camera",
     category: "some category for project 10",
     client: "client's name 10",

@@ -1,0 +1,37 @@
+.accordion_item {
+  background-color: var(--secondaryBackgroundColor);
+  padding: 15px 20px 25px;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  border-radius: 20px 0 20px 0;
+}
+
+.accordion_question_wrapper {
+  display: flex;
+  align-items: baseline;
+
+  cursor: pointer;
+}
+
+.accordion_question {
+  margin-bottom: 15px;
+  margin-left: 7px;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--secondaryTextColor);
+}
+
+.accordion_answer {
+  font-size: 15px;
+  color: var(--primaryTextColor);
+}
+
+.accordion_collapse {
+  //   height: 0;
+  overflow: hidden;
+  transition: height 400ms;
+}

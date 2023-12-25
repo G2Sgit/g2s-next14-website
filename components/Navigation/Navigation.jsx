@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 import NavDropdown from "./NavDropdown/NavDropdown";
 
@@ -13,7 +14,14 @@ import MobileNavigationContacts from "../Header/ContactsLine/MobileNavigationCon
 
 const Navigation = ({ isOpen, setIsOpen }) => {
   const pathname = usePathname();
+  const dropRef = useRef(null);
   const [isDropdownShown, setIsDropdownShown] = useState(false);
+
+  // useEffect(() => {
+  //   console.log(dropRef);
+  //   console.log(dropRef.current);
+  //   console.log(dropRef.current?.scrollHeight);
+  // });
 
   const isMainPage = pathname === "/";
 
@@ -64,56 +72,52 @@ const Navigation = ({ isOpen, setIsOpen }) => {
              } 
              
             ${pathname === "/" && css.nav_link_main}`}
-              href="/aboutUs"
-              onClick={() => setIsOpen(!isOpen)}
+            
+            href="/aboutUs"
+            onClick={() => setIsOpen(!isOpen)}
             >
-              About Us
-            </Link>
-          </li>
-          <li
-            onMouseEnter={handleDropdownOpen}
-            onMouseLeave={handleDropdownClose}
-            onClick={() => setIsDropdownShown(!isDropdownShown)}
-            className={`${css.nav_item} ${css.nav_dropdown_item}`}
-          >
-            <div className={`${css.dropdown_unit}`}>
-              <span
-                // behavior of a text depending on whether it is the main page or some other page.
-                className={`${css.dropdown_btn_text} ${
-                  isMainPage ? css.nav_link_main : css.nav_link
-                }`}
-                // Text color when any dropdown page was selected
+            About Us
+          </Link>
+        </li>
+        <li
+          onMouseEnter={handleDropdownOpen}
+          onMouseLeave={handleDropdownClose}
+          className={`${css.nav_item} ${css.nav_dropdown_item}`}>
+          <div className={`${css.dropdown_unit}`}>
+            <span
+              // behavior of a text depending on whether it is the main page or some other page.
+              className={`${css.dropdown_btn_text} ${
+                isMainPage ? css.nav_link_main : css.nav_link
+              }`}
+              // Text color when any dropdown page was selected
+              style={{
+                color: isServicesActive && "var(--linkActiveColor)",
+              }}>
+              Services
+            </span>
+            {isDropdownShown ? (
+              <FaMinus
+                // colors of minus icon on the main page and all other pages
+                style={{
+                  width: "10px",
+                  color: !isMainPage
+                    ? "var(--linkActiveColor)"
+                    : "var(--accentColor)",
+                }}
+              />
+            ) : (
+              <FaPlus
+                className={css.plus}
+                // colors of plus icon on the main page and all other pages
                 style={{
                   color: isServicesActive && "var(--linkActiveColor)",
                 }}
-              >
-                Services
-              </span>
-              {isDropdownShown ? (
-                <FontAwesomeIcon
-                  icon={faMinus}
-                  // colors of minus icon on the main page and all other pages
-                  style={{
-                    width: "10px",
-                    color: !isMainPage
-                      ? "var(--linkActiveColor)"
-                      : "var(--accentColor)",
-                  }}
-                />
-              ) : (
-                <FontAwesomeIcon
-                  icon={faPlus}
-                  className={css.plus}
-                  // colors of plus icon on the main page and all other pages
-                  style={{
-                    width: "10px",
-                    color: isServicesActive && "var(--linkActiveColor)",
-                  }}
-                />
-              )}
-            </div>
-            {isDropdownShown && <NavDropdown />}
-          </li>
+              />
+            )}
+          </div>
+
+          <NavDropdown isDropdownShown={isDropdownShown} />
+        </li>
 
           <li className={css.nav_item}>
             <Link

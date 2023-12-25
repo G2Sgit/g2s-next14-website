@@ -9,6 +9,7 @@ import ServicesSection from "@/components/HomePageComponents/ServicesSection/Ser
 import WeDoingSection from "@/components/HomePageComponents/WeDoingSection";
 import GetStartedSection from "@/components/GetStartedSection/GetStartedSection";
 import Header from "@/components/Header/Header";
+// import Loader from "@/components/Loader/Loader";
 
 export const metadata = {
   title: "G2S",
@@ -20,6 +21,9 @@ const HomePage = () => {
     <>
       <Header isHomePage />
       <MainHero />
+      {/* <Section>
+        <Loader />
+      </Section> */}
       <Section>
         <AboutUsSection />
       </Section>
