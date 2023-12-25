@@ -3,16 +3,16 @@ import { FaInstagram } from "react-icons/fa";
 
 import css from "./SocialIcons.module.scss";
 
-export default function SocialIcons() {
+export default function SocialIcons({ fb, insta }) {
   return (
     <ul className={css.wrapper}>
       <li className={css.link}>
-        <a href="https://www.facebook.com/">
+        <a href={fb}>
           <FaFacebookF />
         </a>
       </li>
       <li className={css.link}>
-        <a href="http://www.instagram.com/">
+        <a href={insta}>
           <FaInstagram />
         </a>
       </li>
