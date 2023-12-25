@@ -1,17 +1,17 @@
 import css from "./Logo.module.scss";
 
-const Logo = () => {
+const Logo = ({ isHomePage }) => {
   return (
-    <div className={css.logo}>
-      <svg fill={"white"} width={"130px"} height={"90px"}>
+    <div className={isHomePage ? css.logo : css.pageLogo}>
+      {/* <svg fill={"white"} width={"120px"} height={"90px"}>
         <use href={"/logo-sprite.svg#icon-logo1"} />
+      </svg> */}
+      <svg fill={"white"} width={"80px"} height={"70px"}>
+        <use href={"/logo-sprite.svg#icon-wawe"} />
       </svg>
       <p>
-        Web <br /> lab
+        Wave <br /> Web <br /> lab
       </p>
-      {/* <svg fill={"white"} width={"30px"} height={"30px"}>
-        <use href={"/logo-sprite.svg#icon-pencil"} />
-      </svg> */}
     </div>
   );
 };

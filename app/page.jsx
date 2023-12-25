@@ -7,7 +7,8 @@ import AboutUsSection from "@/components/HomePageComponents/AboutUsSection/About
 import RecentProjectsSection from "../components/HomePageComponents/RecentProjectsSection/RecentProjectsSection";
 import ServicesSection from "@/components/HomePageComponents/ServicesSection/ServicesSection";
 import WeDoingSection from "@/components/HomePageComponents/WeDoingSection";
-import GetStartedSection from "@/components/HomePageComponents/GetStartedSection/GetStartedSection";
+import GetStartedSection from "@/components/GetStartedSection/GetStartedSection";
+import Header from "@/components/Header/Header";
 // import Loader from "@/components/Loader/Loader";
 
 export const metadata = {
@@ -18,6 +19,7 @@ export const metadata = {
 const HomePage = () => {
   return (
     <>
+      <Header isHomePage />
       <MainHero />
       {/* <Section>
         <Loader />

@@ -15,3 +15,13 @@
   justify-content: space-between;
   align-items: center;
 }
+.pageContactsLine {
+  border: none;
+  background-color: var(--accentColor);
+  color: white;
+  & li {
+    &:not(:last-of-type) {
+      border-right: none;
+    }
+  }
+}

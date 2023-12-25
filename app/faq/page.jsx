@@ -1,7 +1,7 @@
 import Section from "@/components/Section/Section";
 import Container from "../../components/Container/Container";
 import PageHero from "@/components/PageHero/PageHero";
-// import Paragraph from "@/components/Paragraph/Paragraph";
+import Header from "@/components/Header/Header";
 import { faqList } from "../../data/questionsAndAnswers";
 import Accordion from "@/components/FaqPageComponents/Accordion/Accordion";
 
@@ -12,6 +12,8 @@ export const metadata = {
 
 const FAQPage = () => {
   return (
+  <>
+      <Header />
     <main>
       <PageHero
         title="Frequently Asked Questions"
@@ -25,6 +27,7 @@ const FAQPage = () => {
         </Container>
       </Section>
     </main>
+  </>
   );
 };
 
