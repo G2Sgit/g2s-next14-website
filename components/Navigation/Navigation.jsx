@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,14 +12,8 @@ import css from "./Navigation.module.scss";
 
 const Navigation = () => {
   const pathname = usePathname();
-  const dropRef = useRef(null);
-  const [isDropdownShown, setIsDropdownShown] = useState(false);
 
-  // useEffect(() => {
-  //   console.log(dropRef);
-  //   console.log(dropRef.current);
-  //   console.log(dropRef.current?.scrollHeight);
-  // });
+  const [isDropdownShown, setIsDropdownShown] = useState(false);
 
   const isMainPage = pathname === "/";
 

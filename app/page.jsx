@@ -8,7 +8,6 @@ import RecentProjectsSection from "../components/HomePageComponents/RecentProjec
 import ServicesSection from "@/components/HomePageComponents/ServicesSection/ServicesSection";
 import WeDoingSection from "@/components/HomePageComponents/WeDoingSection";
 import GetStartedSection from "@/components/HomePageComponents/GetStartedSection/GetStartedSection";
-// import Loader from "@/components/Loader/Loader";
 
 export const metadata = {
   title: "G2S",
@@ -18,10 +17,7 @@ export const metadata = {
 const HomePage = () => {
   return (
     <>
-      <MainHero />
-      {/* <Section>
-        <Loader />
-      </Section> */}
+      {/* <MainHero />
       <Section>
         <AboutUsSection />
       </Section>
@@ -32,8 +28,7 @@ const HomePage = () => {
         <WeDoingSection />
       </Section>
       <RecentProjectsSection />
-
-      <GetStartedSection />
+      <GetStartedSection /> */}
     </>
   );
 };
