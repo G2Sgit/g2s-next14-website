@@ -7,7 +7,10 @@ import AboutUsSection from "@/components/HomePageComponents/AboutUsSection/About
 import RecentProjectsSection from "../components/HomePageComponents/RecentProjectsSection/RecentProjectsSection";
 import ServicesSection from "@/components/HomePageComponents/ServicesSection/ServicesSection";
 import WeDoingSection from "@/components/HomePageComponents/WeDoingSection";
-import GetStartedSection from "@/components/HomePageComponents/GetStartedSection/GetStartedSection";
+
+import GetStartedSection from "@/components/GetStartedSection/GetStartedSection";
+import Header from "@/components/Header/Header";
+
 
 export const metadata = {
   title: "G2S",
@@ -17,7 +20,9 @@ export const metadata = {
 const HomePage = () => {
   return (
     <>
-      {/* <MainHero />
+      <Header isHomePage />
+      <MainHero />
+     
       <Section>
         <AboutUsSection />
       </Section>
@@ -28,7 +33,7 @@ const HomePage = () => {
         <WeDoingSection />
       </Section>
       <RecentProjectsSection />
-      <GetStartedSection /> */}
+      <GetStartedSection /> 
     </>
   );
 };

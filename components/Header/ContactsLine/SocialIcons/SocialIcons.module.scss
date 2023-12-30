@@ -1,6 +1,10 @@
 .wrapper {
   display: flex;
   gap: 20px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .link {

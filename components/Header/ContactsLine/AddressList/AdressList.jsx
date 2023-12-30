@@ -3,25 +3,30 @@ import { RiMapPinLine } from "react-icons/ri";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineMailOutline } from "react-icons/md";
 
-const AdressList = () => {
+const AdressList = ({ email, phoneNumber, address, primary }) => {
   return (
-    <ul className={css.contactsLine}>
+    <ul
+      className={
+        !primary ? css["secondary-contactsLine"] : css["primary-contactsLine"]
+      }
+      // {css.contactsLine}
+    >
       <li className={css.link}>
         <a href="/">
           <MdOutlineMailOutline />
-          <span> hi@g2s.com</span>
+          <span> {email}</span>
         </a>
       </li>
       <li className={css.link}>
-        <a href="tel:+380670000000">
+        <a href={`tel:+${phoneNumber}`}>
           <FiPhoneCall />
-          <span>+38 067 000 00 00</span>
+          <span>{phoneNumber}</span>
         </a>
       </li>
       <li className={css.link}>
         <a href="/">
           <RiMapPinLine />
-          <span>124 City Road, London, EC1V 2NX</span>
+          <span>{address}</span>
         </a>
       </li>
     </ul>

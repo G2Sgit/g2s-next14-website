@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${sora.variable} ${roboto.variable}`}>
-        <Header />
+        {/* <Header /> */}
         <main>{children}</main>
         <Footer />
       </body>

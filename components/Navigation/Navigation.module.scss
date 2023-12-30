@@ -9,11 +9,29 @@
   padding: 46px 40px 50px 50px;
 
   background-color: var(--primaryBackgroundColor);
-
   z-index: 10;
+  transition: all 0.8s ease;
+
+  @media screen and (max-width: 767px) {
+    transform: translateX(150%);
+    opacity: 0;
+
+    &.isOpen {
+      // transform: translate3d(0, 0, 0);
+      transform: translateX(0);
+
+      box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
+      opacity: 1;
+      & .nav_link,
+      & .dropdown_btn_text {
+        color: var(--primaryNavColor);
+      }
+    }
+  }
 
   @media screen and (min-width: 768px) {
     position: static;
+    transform: translate3d(0, 0, 0);
 
     width: initial;
 
@@ -62,7 +80,6 @@
 
 .nav_dropdown_item {
   position: relative;
-
   display: flex;
   flex-direction: column;
 }

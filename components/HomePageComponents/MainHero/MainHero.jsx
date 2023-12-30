@@ -3,6 +3,7 @@
 import css from "./MainHero.module.scss";
 import "next-cloudinary/dist/cld-video-player.css";
 import { CldVideoPlayer } from "next-cloudinary";
+import Container from "@/components/Container/Container";
 
 const MainHero = () => {
   return (
@@ -26,11 +27,15 @@ const MainHero = () => {
           <path d="M500,98.9L0,6.1V0h1000v6.1L500,98.9z"></path>
         </svg>
       </div>
-      <h1 className={css.title}>WELCOME TO G2S WEB LAB</h1>
-      <p className={css.subtitle}>Creating Digital Excellence</p>
-      <button type="button" className={css.button}>
-        Get started
-      </button>
+      <Container>
+        <div className={css.content_wrapper}>
+          <h1 className={css.title}>WELCOME TO G2S WEB LAB</h1>
+          <p className={css.subtitle}>Creating Digital Excellence</p>
+          <button type="button" className={css.button}>
+            Get started
+          </button>
+        </div>
+      </Container>
     </div>
   );
 };
