@@ -36,7 +36,11 @@ const WebsiteDesigningPage = () => {
                 className={css.image}
               />
               <div className={css.textSection}>
-                <Heading />
+                <Heading
+                  partOne={"Premium"}
+                  accent={" Web Design"}
+                  partTwo={" Services"}
+                />
                 <Paragraph content=" At London Web Studio, our mission is simple: to help businesses and individuals thrive in the digital world. We believe that your online presence should not only reflect your unique identity but also serve as a powerful tool to achieve your goals. Whether you're a startup looking to establish your brand or an established business seeking a website makeover, we're here to make your online dreams a reality." />
                 <Paragraph content=" Our team of talented designers has a keen eye for aesthetics and a passion for creating visually captivating websites. We understand that first impressions matter, and we ensure your website leaves a memorable one." />
                 <Paragraph content="We prioritize user experience (UX) and usability in every project. Your website will not only look beautiful but also function seamlessly across all devices, providing a smooth and engaging experience for your visitors." />

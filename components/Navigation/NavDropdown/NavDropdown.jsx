@@ -21,7 +21,8 @@ const NavDropdown = ({ isDropdownShown }) => {
           : { height: "0px" }
       }
       ref={dropdownRef}
-      className={css.navigation_menu_content}>
+      className={css.navigation_menu_content}
+    >
       <ul className={css.menu_dropdown}>
         <li className={css.dropdown_item}>
           <Link
@@ -31,11 +32,12 @@ const NavDropdown = ({ isDropdownShown }) => {
                 : null
             } 
   ${pathname === "/" && css.nav_link_main}`}
-            href="/websiteDesigning">
+            href="/websiteDesigning"
+          >
             Website Designing
           </Link>
         </li>
-        <li className={css.dropdown_item}>
+        {/* <li className={css.dropdown_item}>
           <Link
             className={`${css.nav_dropdown_link} ${
               pathname === "/paying" && pathname !== "/"
@@ -46,7 +48,7 @@ const NavDropdown = ({ isDropdownShown }) => {
             href="/paying">
             Pay Per Month Websites
           </Link>
-        </li>
+        </li> */}
         <li className={css.dropdown_item}>
           <Link
             className={`${css.nav_dropdown_link} ${
@@ -55,7 +57,8 @@ const NavDropdown = ({ isDropdownShown }) => {
                 : null
             } 
   ${pathname === "/" && css.nav_link_main}`}
-            href="/eCommerceSolutions">
+            href="/eCommerceSolutions"
+          >
             E-Commerce Solutions
           </Link>
         </li>
@@ -67,7 +70,8 @@ const NavDropdown = ({ isDropdownShown }) => {
                 : null
             } 
   ${pathname === "/" && css.nav_link_main}`}
-            href="/websiteMaintenance">
+            href="/websiteMaintenance"
+          >
             Website Maintenance
           </Link>
         </li>

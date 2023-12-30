@@ -1,14 +1,15 @@
 %flex {
   display: flex;
   justify-content: space-between;
-  & div {
-    flex-grow: 1;
+  @media screen and (max-width: 767px) {
+    & div {
+      flex-grow: 1;
+    }
   }
 }
 
 .fixedNav {
   @extend %flex;
-  display: flex;
 }
 .staticNav {
   @extend %flex;
