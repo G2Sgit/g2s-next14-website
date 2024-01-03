@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { useEffect, useCallback } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { IoClose } from "react-icons/io5";
+import { IconContext } from "react-icons";
+
 import css from "./ModalSingleProject.module.scss";
 
 const ModalSingleProject = ({ chosenSingleProject, closeModal }) => {
@@ -45,11 +46,13 @@ const ModalSingleProject = ({ chosenSingleProject, closeModal }) => {
       <div onClick={handleBackdropClick} className={css.modal_thumb}>
         <div className={css.modal}>
           <div onClick={closeModal} className={css.close_button}>
-            <FontAwesomeIcon
-              icon={faXmark}
-              size="lg"
-              style={{ color: "#ffffff" }}
-            />
+            <IconContext.Provider
+              value={{
+                color: "var(--lightTextColor)",
+                size: "25px",
+              }}>
+              <IoClose />
+            </IconContext.Provider>
           </div>
           <h3 className={css.project_name_title}>{projectName}</h3>
           <h2 className={css.project_name_main_title}>
@@ -77,13 +80,9 @@ const ModalSingleProject = ({ chosenSingleProject, closeModal }) => {
           <p className={css.short_info}>{shortDescription}</p>
           <ul className={css.advantages_list}>
             {advantagesList.map((advantage) => (
-
-             
               <li key={advantage} className={css.advantage_item}>
                 {advantage}
               </li>
-
-
             ))}
           </ul>
           <h3 className={css.any_questions_title}>

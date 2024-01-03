@@ -8,10 +8,10 @@ const NavDropdown = ({ isDropdownShown }) => {
   const dropdownRef = useRef(null);
   const pathname = usePathname();
 
-  useEffect(() => {
-    console.log(dropdownRef);
-    console.log(dropdownRef.current.scrollHeight);
-  });
+  // useEffect(() => {
+  //   console.log(dropdownRef);
+  //   console.log(dropdownRef.current.scrollHeight);
+  // });
 
   return (
     <div
