@@ -7,21 +7,40 @@ import BurgerBtn from "../BurgerBtn/BurgerBtn";
 import Container from "@/components/Container/Container";
 
 const NavigationLine = ({ isHomePage }) => {
-  const { scrollY } = window;
+  // const { scrollY } = window;
+
+  const scrollY = typeof window !== "undefined" ? window.scrollY : 0;
+  //===============================
+
   const [position, setPosition] = useState(scrollY);
   const [visible, setVisible] = useState(true);
   const [isFixed, setIsFixed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      let moving = scrollY;
+      // let moving = scrollY;
+
+      let moving = typeof window !== "undefined" ? window.scrollY : 0;
+      //==============================
 
       setIsFixed(moving > 300);
       setVisible(position > moving);
       setPosition(moving);
     };
-    window.addEventListener("scroll", handleScroll);
-  });
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    // window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, [position]);
+  // });
+
   const [isOpen, setIsOpen] = useState(false);
 
   const classList = useMemo(() => {
