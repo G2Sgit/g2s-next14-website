@@ -1,7 +1,6 @@
 import { Sora, Roboto } from "next/font/google";
 import "./globals.scss";
 
-import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 //============================================ Fonts =====================================================
@@ -26,7 +25,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${sora.variable} ${roboto.variable}`}>
-        {/* <Header /> */}
         <main>{children}</main>
         <Footer />
       </body>

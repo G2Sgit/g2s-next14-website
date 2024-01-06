@@ -27,8 +27,7 @@ const Loader = () => {
   return (
     <Container className={css.main_container}>
       <div className={css.loader_container}>
-        {" "}
-        <h1 className={css.loading_title}>Loading...</h1>
+        <h1 className={css.loading_title}> Loading</h1>
         <Image
           className={css.letter_one}
           src="/img/logo/logoOne.svg"
